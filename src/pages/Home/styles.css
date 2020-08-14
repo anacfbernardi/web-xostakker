@@ -1,0 +1,133 @@
+#home{
+    width: 100vw;
+    height: 100vh;
+    border-radius: 15.2px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.home-wrapper {
+    margin-top: 10px;
+    max-width: 800px;
+    width: 100vw;
+    height: 100vh;
+    background: #fff;
+    border: 1px solid var(--color-background-secondary);
+}
+
+.header-home {
+    display: flex;
+    align-items: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.header-home img {
+    width: 75px;
+    height: 50px;
+    margin-left: 20px;
+}
+
+.header-text {
+    margin-left: 20px;
+    margin-top: 10px;
+}
+
+.header-text strong {
+    font: 700 19px Roboto;
+    padding: 0;    
+    margin: 0;
+}
+
+.header-text p {
+    font: 15px Roboto;  
+    padding: 0;  
+    margin: 0;
+}
+
+.profile-banner img {
+    width: 100%;
+    height: 200px;
+}
+
+.profile-photo {
+    margin-top: -100px;
+}
+
+.profile-photo img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    margin-left: 20px;
+    border: 10px solid #FFF;
+}
+
+.profile-info{
+    margin-left: 20px;
+}
+
+.profile-info strong {
+    font: 700 19px Roboto;
+    padding: 0;    
+    margin: 0;
+}
+
+.profile-info p {
+    font: 17px Roboto;  
+    padding: 0;  
+    margin: 0;
+}
+
+.profile-info-id {
+    color: var(--color-background-secondary);
+}
+
+.profile-bio {
+    margin-top: 12px;
+    font: 17px Roboto; 
+}
+
+.profile-details-info {
+    margin: 20px 0;
+}
+
+.profile-details-info-location {
+    display: flex;
+    align-items: center;
+}
+
+.profile-details-info-location svg {
+    fill: var(--color-text-title);
+    height: 20px;
+    max-width: 100%;
+    margin-right: 10px;
+}
+
+.profile-details-info-location p {
+    color: var(--color-text-title);
+    font: 17px Roboto;
+}
+
+.profile-details-info-location p + svg{
+    margin-left: 20px;
+}
+
+.profile-details-info-connections {
+    display: flex;
+    align-items: center;
+    margin: 20px 0;
+}
+
+.profile-details-info-connections a {
+    text-decoration: none;
+}
+
+.profile-details-info-connections p {
+    font: 17px Roboto;
+    margin-right: 20px;
+}
+
+.profile-details-info-connections strong{
+    font: 700 17px Roboto;
+}

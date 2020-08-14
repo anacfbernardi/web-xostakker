@@ -1,0 +1,30 @@
+.tweet-card {
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 1px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid var(--color-background-secondary);
+    overflow: hidden;    
+}
+
+.tweet-card-header {
+    padding: 0;  
+    margin: 0;
+    display: flex;
+    align-items: center;
+}
+
+.tweet-card-header strong {
+    font: 700 17px Roboto;  
+}
+
+.tweet-card-header p {
+    font: 17px Roboto;  
+    color: var(--color-background-secondary);
+}
+
+.tweet-card-tweet {
+    font: 17px Roboto;  
+    padding: 0;  
+    margin: 5px 0;
+}

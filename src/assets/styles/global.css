@@ -1,0 +1,37 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+  }
+  
+  :root {
+    --color-background: #F0F0F7; 
+    --color-background-secondary: #c4c4d4;
+    --color-text-title: #494988;
+    --color-text-primary: #fff;
+    --color-text-secondary: #4d87ab;    
+  }
+  
+  html,
+  body {
+    margin: 0;
+    padding: 0;
+    background: var(--color-background);
+  }
+
+  body,
+  input,
+  button,
+  textarea {
+    font: 500 1.6rem Roboto;
+    color: var(--color-text-base);
+  }
+  
+  a {
+    color: inherit;
+  } 
+  
+  #root {
+    min-height: calc(100vh - var(--bodyPaddingTop));
+    display: flex;
+    flex-direction: column;  
+  }

@@ -1,0 +1,35 @@
+{
+    "tweets": [
+        {
+            "name": "Marcelo Szostak",
+            "account": "@msk_szostak",
+            "date": "2012-08-15",
+            "tweet": "I love Dropbox because is very simple and very well!\nMarcelo has invited you to join Dropbox!\nDropbox is a free service that lets you bring your photos, docs, and videos anywhere and share them easily. Never email yourself a file again!\ndropbox.com"
+        },
+        {
+            "name": "Marcelo Szostak",
+            "account": "@msk_szostak",            
+            "date": "2012-06-22",
+            "tweet": "Bom dia Pessoal! Para quem tiver interesse, estamos lançando uma pós baseada em Java para ambiente Corporativo.\nhttp://posup.com.br/conteudo/4636/desenvolvimento-java-corporativo.aspx"
+        },
+        {
+            "name": "Marcelo Szostak",
+            "account": "@msk_szostak",            
+            "date": "2011-04-23",
+            "tweet": "Brusque, Nova Trento e Blumenau ... bem loco."
+        },
+        {
+            "name": "Marcelo Szostak",
+            "account": "@msk_szostak",            
+            "date": "2011-04-21",
+            "tweet": "Aguardando a madrugada para viajar!"
+        }
+    ]
+}
+
+
+
+
+
+
+
