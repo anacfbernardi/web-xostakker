@@ -12,8 +12,8 @@ function getAll() {
   });
 }
 
-function getAllWithVideos() {
-  return fetch(`${URL_FOLLOWERS}`).then(async (response) => {
+function getByIdProfile(idProfile) {
+  return fetch(`${URL_FOLLOWERS}?idProfile=${idProfile}`).then(async (response) => {
     if (response.ok) {
       const resp = await response.json();
       return resp;
@@ -23,6 +23,6 @@ function getAllWithVideos() {
 }
 
 export default {
-  getAllWithVideos,
+  getByIdProfile,
   getAll,
 };

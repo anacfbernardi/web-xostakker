@@ -1,9 +1,15 @@
-import React from 'react';
+import React, { useState } from 'react';
+
+import './styles.css';
 
 function Followers() {
+  const [followers, setFollowers] = useState([]);
+
   return (
-    <div id="followers">
-      Teste
+    <div className="tweets-wrapper">
+      {followers.map((follow) => (
+        <div key={follow.id}>{follow.name}</div>
+      ))}
     </div>
   );
 }

@@ -12,7 +12,7 @@ const DefaultPage = ({ children, id }) => (
 );
 
 DefaultPage.propTypes = {
-  children: PropTypes.element,
+  children: PropTypes.array,
   id: PropTypes.string.isRequired,
 };
 

@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import TweetCard from '../TweetCard';
 
 import './styles.css';
@@ -27,5 +28,13 @@ function Tweets({ TweetsData }) {
     </>
   );
 }
+
+Tweets.propTypes = {
+  TweetsData: PropTypes.object,
+};
+
+Tweets.defaultProps = {
+  TweetsData: {},
+};
 
 export default Tweets;

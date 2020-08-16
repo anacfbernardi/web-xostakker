@@ -1,0 +1,43 @@
+#followers .arrow-back-wrapper {
+    display: flex;
+    justify-content: center;    
+    align-items: center;
+    height: 50px;
+    width: 50px;    
+    margin-left: 10px;
+    border-radius: 50%;
+    transition-property: background-color, box-shadow;
+    transition-duration: 0.2s;    
+}
+
+#followers .arrow-back-wrapper:hover {
+    background-color: var(--color-background);
+}
+
+#followers .arrow-back {
+    fill: var(--color-background-secondary);
+    height: 40px;
+    max-width: 100%;
+    cursor: pointer;   
+}
+
+#followers .profile-name {
+    font: 700 19px Roboto;
+    padding: 0;    
+    margin: 0;
+}
+
+#followers .profile-account {
+    font: 15px Roboto;  
+    padding: 0;  
+    margin: 0;
+    color: var(--color-background-secondary);
+}
+
+#followers .loader-wrapper {
+    display: flex;
+    justify-content: center;    
+    align-items: center;
+    width: 100%;
+    margin-top: 20px;
+}

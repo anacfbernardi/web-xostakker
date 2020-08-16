@@ -1,0 +1,61 @@
+.relation-card {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;    
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 1px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid var(--color-background-secondary);
+    overflow: hidden;
+}
+
+.relation-card-header {
+    padding: 0;  
+    margin: 0;
+}
+
+.relation-card-header strong {
+    padding: 0;  
+    margin: 0;    
+    font: 700 17px Roboto;  
+}
+
+.relation-card-header p {
+    padding: 0;  
+    margin: 0;    
+    font: 17px Roboto;  
+    color: var(--color-background-secondary);
+}
+
+.relation-card-relation {
+    padding: 0;  
+    margin-top: 15px;
+}
+
+button {
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0);
+    border-color: var(--color-text-title);
+    border-width: 1px;
+    border-style: solid;
+    border-radius: 9999px;
+    display: flex;
+    justify-content: center;
+    outline:none;
+    padding-left: 1em;
+    padding-right: 1em;
+    transition-property: background-color, box-shadow;
+    transition-duration: 0.2s;
+    width: 110px;    
+}
+
+button:hover {
+    background-color: var(--color-background);
+}
+
+span {
+    color: var(--color-text-title);
+    font: 700 17px Roboto;
+    padding: 10px;
+}

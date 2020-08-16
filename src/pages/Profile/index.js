@@ -88,8 +88,8 @@ function Profile({ profile, following, followers }) {
 
 Profile.propTypes = {
   profile: PropTypes.object.isRequired,
-  following: PropTypes.string,
-  followers: PropTypes.string,
+  following: PropTypes.number,
+  followers: PropTypes.number,
 };
 
 Profile.defaultProps = {

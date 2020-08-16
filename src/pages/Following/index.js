@@ -1,15 +1,16 @@
 import React, { useState, useEffect } from 'react';
 import { useHistory } from 'react-router-dom';
 
-import followingRepository from '../../repositories/following';
-import DefaultPage from '../../components/DefaultPage';
-import PageHeader from '../../components/PageHeader';
 import ArrowBack from '../../assets/images/icons/ArrowBack';
+import DefaultPage from '../../components/DefaultPage';
+import followingRepository from '../../repositories/following';
+import Loader from '../../components/Loader';
+import PageHeader from '../../components/PageHeader';
 
 import './styles.css';
-import Loader from '../../components/Loader';
 
 function Following() {
+  const idProfile = 1;
   const history = useHistory();
   const [following, setFollowing] = useState([]);
   const [loading, setLoading] = useState(true);
@@ -28,7 +29,7 @@ function Following() {
 
   useEffect(() => {
     followingRepository
-      .getAll()
+      .getByIdProfile(idProfile)
       .then((dados) => setFollowing(dados));
     setLoading(false);
   }, []);
@@ -50,10 +51,10 @@ function Following() {
       />
 
       <div className="tweets-header">
-        <div className="tweet-header-box">
+        <div className="tweet-header-box-inactive">
           <p>Followers</p>
         </div>
-        <div className="tweet-header-box-inactive">
+        <div className="tweet-header-box">
           <p>Following</p>
         </div>
       </div>
