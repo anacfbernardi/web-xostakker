@@ -1,9 +1,11 @@
 import React from 'react';
 
 function Followers() {
-    return (
-        <div>teste followers</div>
-    );
+  return (
+    <div id="followers">
+      Teste
+    </div>
+  );
 }
 
 export default Followers;

@@ -1,0 +1,11 @@
+.header-wrapper {
+    display: flex;
+    align-items: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.header-text {
+    margin-left: 20px;
+    margin-top: 10px;
+}
