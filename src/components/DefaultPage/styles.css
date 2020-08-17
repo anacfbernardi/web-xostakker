@@ -1,17 +1,6 @@
-.default-page{
-    width: 100vw;
-    height: 100vh;
-    border-radius: 15.2px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
 .default-page-wrapper {
-    margin-top: 10px;
     max-width: 800px;
     width: 100vw;
-    height: 100vh;
     background: #fff;
     border: 1px solid var(--color-background-secondary);
 }

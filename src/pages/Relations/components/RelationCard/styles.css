@@ -2,35 +2,47 @@
     display: flex;
     align-items: center;
     justify-content: space-between;    
-    padding-left: 20px;
-    padding-right: 20px;
-    padding-top: 1px;
-    padding-bottom: 20px;
+    padding: 5px 20px;
     border-bottom: 1px solid var(--color-background-secondary);
     overflow: hidden;
 }
 
-.relation-card-header {
-    padding: 0;  
-    margin: 0;
+.relation-card-profile-image {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-left: 10px;
+    margin: 5px;
+    padding: 4px;
+    border: 03px solid var(--color-background);
 }
 
-.relation-card-header strong {
+.relation-card-info {
+    flex: 0.97;
+    padding: 0;  
+}
+
+.relation-card-info strong {
     padding: 0;  
     margin: 0;    
     font: 700 17px Roboto;  
 }
 
-.relation-card-header p {
+.relation-card-info p {
     padding: 0;  
     margin: 0;    
     font: 17px Roboto;  
     color: var(--color-background-secondary);
 }
 
+.relation-card-info span {
+    padding: 0;  
+    margin: 0;    
+    font: 17px Roboto;
+}
+
 .relation-card-relation {
     padding: 0;  
-    margin-top: 15px;
 }
 
 button {
@@ -54,7 +66,7 @@ button:hover {
     background-color: var(--color-background);
 }
 
-span {
+button span {
     color: var(--color-text-title);
     font: 700 17px Roboto;
     padding: 10px;

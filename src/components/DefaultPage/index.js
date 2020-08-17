@@ -4,10 +4,8 @@ import PropTypes from 'prop-types';
 import './styles.css';
 
 const DefaultPage = ({ children, id }) => (
-  <div id={id} className="default-page">
-    <div className="default-page-wrapper">
-      {children}
-    </div>
+  <div id={id} className="default-page-wrapper">
+    {children}
   </div>
 );
 

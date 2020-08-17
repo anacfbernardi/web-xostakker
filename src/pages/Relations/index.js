@@ -35,25 +35,26 @@ function Relations() {
     );
   }
 
-  function loadDataByType() {
-    const me = new Promise((resolve) => setTimeout(resolve, 10000));
+  async function loadDataByType() {
+    setLoading(true);
 
     if (pageType === '/following') {
-      followingRepository
+      await followingRepository
         .getByIdProfile(idProfile)
         .then((dados) => setFollowing(dados));
     } else if (pageType === '/followers') {
-      followersRepository
+      await followersRepository
         .getByIdProfile(idProfile)
         .then((dados) => setFollowers(dados));
     }
+    setLoading(false);
   }
 
   function renderDataByType() {
     const data = pageType === '/following' ? following : followers;
 
     return (
-      <div className="tweets-wrapper">
+      <div className="relations-wrapper">
         {data.map((item) => (
           <RelationCard key={item.id} relation={item} />
         ))}
@@ -67,7 +68,7 @@ function Relations() {
 
   useEffect(() => {
     loadDataByType();
-    setLoading(false);
+    // eslint-disable-next-line
   }, [pageType]);
 
   return (
