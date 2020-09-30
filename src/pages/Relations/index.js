@@ -47,7 +47,10 @@ function Relations() {
         .getByIdProfile(idProfile)
         .then((dados) => setFollowers(dados));
     }
-    setLoading(false);
+
+    setTimeout(() => {
+      setLoading(false);
+    }, 2000);
   }
 
   function renderDataByType() {
