@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { useHistory } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 
 import ArrowBack from '../../assets/images/icons/ArrowBack';
 import DefaultPage from '../../components/DefaultPage';
@@ -11,12 +11,12 @@ import './styles.css';
 
 function Following() {
   const idProfile = 1;
-  const history = useHistory();
+  const history = useNavigate();
   const [following, setFollowing] = useState([]);
   const [loading, setLoading] = useState(true);
 
   function backPage() {
-    history.push('/');
+    history('/');
   }
 
   function Loading() {

@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { useHistory, Link } from 'react-router-dom';
+import { useNavigate, Link } from 'react-router-dom';
 
 import ArrowBack from '../../assets/images/icons/ArrowBack';
 import DefaultPage from '../../components/DefaultPage';
@@ -13,7 +13,7 @@ import RelationCard from './components/RelationCard';
 
 function Relations() {
   const idProfile = 1;
-  const history = useHistory();
+  const history = useNavigate();
   const [pageType, setPageType] = useState();
   const [followers, setFollowers] = useState([]);
   const [following, setFollowing] = useState([]);
@@ -24,7 +24,7 @@ function Relations() {
   }
 
   function backPage() {
-    history.push('/');
+    history('/');
   }
 
   function Loading() {
@@ -79,7 +79,7 @@ function Relations() {
       <PageHeader
         image={(
           <div className="arrow-back-wrapper">
-            <ArrowBack className="arrow-back" onClick={backPage} />
+            <ArrowBack className="arrow-back" onClick={() => backPage()} />
           </div>
         )}
         headerItems={(

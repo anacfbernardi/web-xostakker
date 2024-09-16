@@ -1,20 +1,20 @@
 import React from 'react';
-import { BrowserRouter, Switch, Route } from 'react-router-dom';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Home from '../pages/Home';
 import Relations from '../pages/Relations';
 import NotFound from '../pages/NotFound';
 
-function Routes() {
+function Routess() {
   return (
     <BrowserRouter>
-      <Switch>
-        <Route path="/" component={Home} exact />
-        <Route path="/following" component={Relations} exact />
-        <Route path="/followers" component={Relations} exact />
-        <Route component={NotFound} />
-      </Switch>
+      <Routes>
+        <Route path="/" element={<Home />} exact />
+        <Route path="/following" element={<Relations />} exact />
+        <Route path="/followers" element={<Relations />} exact />
+        <Route element={<NotFound />} />
+      </Routes>
     </BrowserRouter>
   );
 }
 
-export default Routes;
+export default Routess;

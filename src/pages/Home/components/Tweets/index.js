@@ -23,7 +23,9 @@ function Tweets({ TweetsData }) {
       </div>
 
       <div className="tweets-wrapper">
-        {TweetsData.tweets.map((tweet) => (<TweetCard key={tweet.id} tweet={tweet} />))}
+        {TweetsData.tweets.map((tweet) => (
+          <TweetCard key={tweet.id} tweet={tweet} profile={TweetsData.profiles[0]} />
+        ))}
       </div>
     </>
   );
